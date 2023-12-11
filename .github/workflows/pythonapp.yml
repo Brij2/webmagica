@@ -16,5 +16,5 @@ jobs:
     - name: Build & Push Image
       run: |
         echo "${{ secrets.DOCKERPW }}" | docker login -u "iammrk" --password-stdin
-        docker image build -t iammrk/AutoDocPush:latest .
-        docker push iammrk/AutoDocPush:latest
+        docker image build -t iammrk/autodocpush:latest .
+        docker push iammrk/autodocpush:latest
